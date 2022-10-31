@@ -1,15 +1,14 @@
 const student = {
-  firstName: "Boris",
-  lastName: "Paillard"
+  firstName: "Hafid",
+  lastName: "Qarchi"
 };
 
 console.log(student['firstName']);
-student['firstName'] = "Super Boris";
-console.log(student)
+student['firstName'] = "Super Hafid";
+console.log(student['firstName']);
 
 console.log(student.firstName);
 
-const myKey = 'firstName';
-
-console.log(student.myKey); // DOESNT NOT WORK
-console.log(student[myKey]); // DOES WORK
+const studentKey = 'firstName';
+console.log(student.studentKey); // doesn't give "Super Hafid"
+console.log(student[studentKey]);

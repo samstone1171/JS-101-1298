@@ -1,37 +1,32 @@
-# p "Hello 928s"
-# p "Hello 928s".class
+# p "Hello batch #1017".class
+# p 42.class
+# p 3.24.class
+# p true.class
 
 # p 42.to_s
-# p '42'.to_i
+# p "42".to_i
 
-# student = "Carla"
-# age = 25
+student = "Sammy"
+# age = 76
 
 # puts "#{student} is #{age} years-old."
-
 # age += 1
-
-# puts "#{student} is #{age} years-old next year."
-
-student = "cArLa"
+# puts "#{student} is #{age} years-old in a year."
 
 p student[0]
-p student.size
 p student.length
-# p student.count # ARRAY METHOD
+p student.size
+# p student.count only for arrays!
 
-p student.slice(1, 3) #keep 3 chars from index 1
+p student[0..2]
+p student.slice(1, 3)
 
 p student.upcase
 p student.downcase
 p student.capitalize
 
-students_string = "Song, Mounir, Jan, Soufiane, Josh"
-another_students_string = "Song Mounir Jan Soufiane Josh"
-
-students = students_string.split(", ")
-p students
-p another_students_string.split
-
+students_string = "Keita, Sunny, Yumi, Fred"
+p students_string.split # split on a space
+p students = students_string.split(", ")
 p students.join
-p students.join("~~")
+p students.join("-")

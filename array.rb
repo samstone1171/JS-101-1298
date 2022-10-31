@@ -1,24 +1,24 @@
 # ARRAY CRUD
-students = ['Ayaka', 'Alison', 'Andre']
+students = ['Fred', 'Tash', 'Erika']
 
 # Create
-students << "Alex"
-students.push("Adam")
+students << "Will"
+students.push("Patrik")
 p students
 
 # Read
 p students[1]
 
 # Update
-students[1] = "Super Alison"
+students[1] = "Super Tash"
 p students
 
 # Delete
-# students.delete_at(1)
-# students.delete("Ayaka")
+students.delete_at(1)
+students.delete("Fred")
 p students
 
 # Iterate
 students.each do |student|
-  p "#{student} is amazing!"
+  puts "#{student} is amazing!"
 end

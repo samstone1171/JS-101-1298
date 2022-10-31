@@ -1,8 +1,9 @@
-const student = "cArLa";
+const student = "sUNny";
+
 
 const capitalize = (word) => {
   const firstLetter = word[0].toUpperCase();
-  const remainder = word.slice(1).toLowerCase();
+  const remainder = word.substring(1).toLowerCase();
   return `${firstLetter}${remainder}`;
 };
 

@@ -1,21 +1,20 @@
 // ARRAY CRUD
-const students = ['Ayaka', 'Alison', 'Andre'];
+const students = ['Fred', 'Tash', 'Erika'];
 
 // Create
-students.push("Alex");
+students.push("Patrik")
 console.log(students);
 
 // Read
 console.log(students[1]);
 
 // Update
-students[1] = "Super Alison";
+students[1] = "Super Tash";
 console.log(students);
 
 // Delete
-// students.splice(1, 2); // delete 2 elements from index 1
-// students.splice(3, 1); // delete the elements of index 3
-// students.splice(1); // delete all elements from index 1
+students.splice(1,1); // removes 1 element from element of index one
+// students.splice(1,2); // removes 2 elements from element of index one
 console.log(students);
 
 // Iterate
@@ -24,15 +23,11 @@ students.forEach((student) => {
   console.log(`${student} is amazing!`);
 });
 
-// students.forEach((student, index, array) => {
-//   console.log(`${index + 1} - ${student} is amazing! (selected in ${array})`);
-// });
-
 
 // Side note: Cut strings into multi line
+console.log(`Multi line
+string!`);
 
-// console.log("I am 
-//   multi line"); NOT OK
-
-console.log(`I am 
-multi line`);a
+// That doesn't work:
+// console.log('Multi line
+// string!');
