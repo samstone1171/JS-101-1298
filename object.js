@@ -1,14 +1,17 @@
 const student = {
-  firstName: "Hafid",
-  lastName: "Qarchi"
+  firstName: "Yin",
+  lastName: "Lee" 
 };
 
+// READ 
 console.log(student['firstName']);
-student['firstName'] = "Super Hafid";
-console.log(student['firstName']);
-
 console.log(student.firstName);
 
-const studentKey = 'firstName';
-console.log(student.studentKey); // doesn't give "Super Hafid"
-console.log(student[studentKey]);
+// WRITE
+student.firstName = "Super Yin";
+console.log(student);
+
+// Caution point!
+const myKey = 'firstName';
+console.log(student.myKey); // BAD: returns undefined!!
+console.log(student[myKey]); // GOOD

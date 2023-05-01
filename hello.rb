@@ -1,32 +1,34 @@
-# p "Hello batch #1017".class
-# p 42.class
-# p 3.24.class
-# p true.class
+# puts "Hello #1190"
+# puts 12.class
+# puts 13.4.class
+# puts true.class
+# puts "hello".class
 
-# p 42.to_s
-# p "42".to_i
+# puts 12.to_s.class
+# puts "12".to_i.class
 
-student = "Sammy"
-# age = 76
+student = "dOnAld"
+age = 21
 
-# puts "#{student} is #{age} years-old."
-# age += 1
-# puts "#{student} is #{age} years-old in a year."
+puts "#{student} is #{age} years-old."
+age += 1
+puts "#{student} is #{age} years-old next year."
 
-p student[0]
-p student.length
-p student.size
-# p student.count only for arrays!
+puts student.downcase
+puts student.upcase
+puts student.capitalize
 
-p student[0..2]
-p student.slice(1, 3)
+# puts student.count #only on an array
+puts student.length
+puts student.size
+# puts student.first #only on an array
+puts student[0]
+puts student[0..2]
+puts student.slice(0,3)
 
-p student.upcase
-p student.downcase
-p student.capitalize
-
-students_string = "Keita, Sunny, Yumi, Fred"
-p students_string.split # split on a space
-p students = students_string.split(", ")
-p students.join
-p students.join("-")
+students_string = "Joe,Daniel,Ryo,Andrew"
+# split splits on the sapces
+students_array = students_string.split(",")
+p students_array
+p students_array.join
+p students_array.join("~")

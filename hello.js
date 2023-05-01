@@ -1,47 +1,56 @@
-// console.log("Hello batch #1017");
-// console.log(typeof("Hello batch #1017"));
-// console.log(typeof(42));
-// console.log(typeof(3.14));
+// console.log("Hello #1190");
+// console.log(typeof(12));
+// console.log(typeof(13.4));
 // console.log(typeof(true));
+// console.log(typeof("hello"));
 
-// console.log((42).toString());
-// console.log(parseInt("42", 10)); 
+// // (12).toString()
+// console.log(typeof((12).toString()));
+// // parseInt("13", 10);
+// console.log(typeof(parseInt("13", 10)));
+// console.log(parseInt("101", 10));
 
 // Count in binary
-// 000 -> 0
-// 001 -> 1
-// 010 -> 2
-// 011 -> 3
-// 100 -> 4
-// 101 -> 5
-// console.log(parseInt("101", 2)); 
-// console.log(parseInt("101", 10)); 
+// 0 => 0
+// 1 => 1
+// 10 => 2
+// 11 => 3
+// 100 => 4
+// 101 => 5
+// console.log(parseInt("101", 2));
 
-const student = "Sammy";
-// let age = 76;
+const student = "dOnAld"; // cannot be re-assigned
+let age = 21; // can be re-assigned
 
-// console.log(`${student} is ${age} years-old.`);
-// age += 1 // let var can be re-assigned!
-// console.log(`${student} is ${age} years-old in a year.`);
+console.log(`${student} is ${age} years-old.`);
+age += 1;
+console.log(age);
+// student = "Super Donald"; //DOESN'T WORK
+// console.log(student);
+console.log(`${student} is ${age} years-old next year.`);
 
-// student = "Mo"; // const var cannot be re-assigned!
-// console.log(`${student} is ${age} years-old in a year.`);
-
-console.log(student[0]);
-console.log(student.length);
-
-console.log(student.slice(1)); // returns all char from index 1
-console.log(student.slice(0, 3)); // returns all char from index 0 to index 3 excluded
-console.log(student.substring(0, 3));
-
-console.log(student.toUpperCase());
 console.log(student.toLowerCase());
+console.log(student.toUpperCase());
+// no capitalize in JS!!
 
-const students_string = "Keita, Sunny, Yumi, Fred";
-console.log(students_string.split()); // not splitting and store in an array
-console.log(students_string.split(", "));
+console.log(student.length);
+console.log(student[0]);
 
-const students = students_string.split(", ");
+console.log(student.slice(1)); //from index 1 to the end
+console.log(student.slice(1, 3)); //from index 1 to index 3 excluded
+console.log(student.substring(1, 3)); //from index 1 to index 3 excluded
 
-console.log(students.join()); // creates a string with comma separated values
-console.log(students.join("~"));
+const students_string = "Joe,Daniel,Ryo,Andrew";
+const students_array = students_string.split(",");
+console.log(students_array);
+console.log(students_array.join()); // JS .join add commas by default!
+console.log(students_array.join(""));
+console.log(students_array.join("="));
+
+console.log(`Multi
+line
+string`);
+
+// console.log("Multi
+// line
+// string"); // DOESN'T WORK
