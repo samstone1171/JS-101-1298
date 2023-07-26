@@ -1,56 +1,24 @@
-// console.log("Hello #1190");
-// console.log(typeof(12));
-// console.log(typeof(13.4));
-// console.log(typeof(true));
-// console.log(typeof("hello"));
+// Ruby vs JS
 
-// // (12).toString()
-// console.log(typeof((12).toString()));
-// // parseInt("13", 10);
-// console.log(typeof(parseInt("13", 10)));
-// console.log(parseInt("101", 10));
+// how to print
 
-// Count in binary
-// 0 => 0
-// 1 => 1
-// 10 => 2
-// 11 => 3
-// 100 => 4
-// 101 => 5
-// console.log(parseInt("101", 2));
+// no float/integer
 
-const student = "dOnAld"; // cannot be re-assigned
-let age = 21; // can be re-assigned
+// how parseInt works
 
-console.log(`${student} is ${age} years-old.`);
-age += 1;
-console.log(age);
-// student = "Super Donald"; //DOESN'T WORK
-// console.log(student);
-console.log(`${student} is ${age} years-old next year.`);
+// toString doesn’t work without ()
 
-console.log(student.toLowerCase());
-console.log(student.toUpperCase());
-// no capitalize in JS!!
+// iterate over an array
+const students = ['Alan', 'Gabrielle', 'Ritsuki', 'Caitlyn'];
 
-console.log(student.length);
-console.log(student[0]);
+// object when to use . or []
+const student = {
+  firstName: "Alvin",
+  lastName: "Yau" 
+};
 
-console.log(student.slice(1)); //from index 1 to the end
-console.log(student.slice(1, 3)); //from index 1 to index 3 excluded
-console.log(student.substring(1, 3)); //from index 1 to index 3 excluded
+// where is the backtick
 
-const students_string = "Joe,Daniel,Ryo,Andrew";
-const students_array = students_string.split(",");
-console.log(students_array);
-console.log(students_array.join()); // JS .join add commas by default!
-console.log(students_array.join(""));
-console.log(students_array.join("="));
+// ===
 
-console.log(`Multi
-line
-string`);
-
-// console.log("Multi
-// line
-// string"); // DOESN'T WORK
+// var, const, let and the camel case
