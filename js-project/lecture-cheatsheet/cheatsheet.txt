@@ -1,0 +1,6 @@
+<li>Minato reds ⛑️</li>
+
+<li>
+  <img id="aliia-gismatullina" src="https://avatars.githubusercontent.com/u/138187142?v=4" alt="">
+  <p>Aliia Gismatullina</p>
+</li>

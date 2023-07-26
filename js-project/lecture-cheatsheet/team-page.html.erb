@@ -5,7 +5,7 @@
     <ul>
     <%  student_group.each do |student| %>
       <li>
-        <img id="<%= student["name"] %>" src="<%= student["img"] %>" alt="">
+        <img id="<%= student["name"].downcase.gsub(" ", "-") %>" src="<%= student["img"] %>" alt="">
         <p><%= student["name"] %></p>
       </li>
     <% end %>
